@@ -1,0 +1,52 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  color: #020202;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0); 
+}
+
+.profileBox {
+  display: flex;
+  align-items: center;
+  width: 150px;
+}
+
+.avatar {
+  width: 60px;
+  border-radius: 55px;
+  height: 60px;
+  object-fit: cover;
+  border: 2px solid #020202;
+}
+
+.navList {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navLink {
+  color: #020202;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.navLink:hover {
+  text-decoration: underline;
+}
+
+.title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0;
+  width: 150px; 
+  text-align: right;
+}
