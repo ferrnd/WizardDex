@@ -5,27 +5,28 @@
     align-items:center;
     min-height:100vh;
     text-align:center;
-    background:hsl(0, 0%, 96%);
+    background:hsla(44, 33%, 50%, 0.589);
 }
 
 .container h1{
-    font-size:90px;
-    color:rgba(167, 162, 100, 0.753);
+    font-size:120px;
+    height: 45px;
+    color:rgba(155, 136, 76, 0.753);
 }
 
 .container h2{
     margin:20px 0;
-    color:rgba(185, 181, 118, 0.911);
+    color:rgba(179, 145, 84, 0.911);
 }
 
 .container p{
-    color:rgb(185, 183, 58);
+    color:rgb(189, 149, 96);
     margin-bottom:30px;
 }
 
 .button{
-    background:rgba(194, 193, 145, 0.712);
-    color:#948336;
+    background:rgba(151, 123, 62, 0.616);
+    color:#f7cf9a;
     padding:12px 24px;
     border-radius:8px;
     text-decoration:none;
@@ -33,5 +34,5 @@
 }
 
 .button:hover{
-    background:rgba(189, 187, 106, 0.774);
+    background:rgba(187, 145, 83, 0.555);
 }
