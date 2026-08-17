@@ -7,7 +7,7 @@
   position: absolute;
   top: 0;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0); 
+  background-color: rgba(255, 255, 255, 0);
 }
 
 .profileBox {
@@ -47,6 +47,6 @@
   font-size: 1.5rem;
   font-weight: bold;
   margin: 0;
-  width: 150px; 
+  width: 150px;
   text-align: right;
 }

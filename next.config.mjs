@@ -1,7 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  /* config options here */
-  reactCompiler: true,
+    images: {
+        remotePatterns: [
+            {
+                protocol: 'https',
+                hostname: 'ik.imagekit.io', // Imagens da HP API
+            },
+            {
+                protocol: 'https',
+                hostname: 'placehold.co', // Imagem de fallback
+            },
+        ],
+    },
 };
 
 export default nextConfig;
