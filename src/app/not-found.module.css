@@ -5,6 +5,7 @@
     align-items:center;
     min-height:100vh;
     text-align:center;
+<<<<<<< HEAD
     background:hsl(0, 0%, 96%);
 }
 
@@ -12,21 +13,43 @@
     font-size:90px;
     
     color:rgba(167, 162, 100, 0.753);
+=======
+    background:hsla(44, 33%, 50%, 0.589);
+}
+
+.container h1{
+    font-size:120px;
+    height: 45px;
+    color:rgba(155, 136, 76, 0.753);
+>>>>>>> 5fe3bbcf3122b760681a6b0c9d35e0819c65300e
 }
 
 .container h2{
     margin:20px 0;
+<<<<<<< HEAD
     color:rgba(185, 181, 118, 0.911);
 }
 
 .container p{
     color:rgb(185, 183, 58);
+=======
+    color:rgba(179, 145, 84, 0.911);
+}
+
+.container p{
+    color:rgb(189, 149, 96);
+>>>>>>> 5fe3bbcf3122b760681a6b0c9d35e0819c65300e
     margin-bottom:30px;
 }
 
 .button{
+<<<<<<< HEAD
     background:rgba(194, 193, 145, 0.712);
     color:#948336;
+=======
+    background:rgba(151, 123, 62, 0.616);
+    color:#f7cf9a;
+>>>>>>> 5fe3bbcf3122b760681a6b0c9d35e0819c65300e
     padding:12px 24px;
     border-radius:8px;
     text-decoration:none;
@@ -34,5 +57,10 @@
 }
 
 .button:hover{
+<<<<<<< HEAD
     background:rgba(189, 187, 106, 0.774);
 }
+=======
+    background:rgba(187, 145, 83, 0.555);
+}
+>>>>>>> 5fe3bbcf3122b760681a6b0c9d35e0819c65300e

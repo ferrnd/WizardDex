@@ -15,4 +15,8 @@ export default function NotFound() {
             </Link>
         </main>
     );
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> 5fe3bbcf3122b760681a6b0c9d35e0819c65300e
