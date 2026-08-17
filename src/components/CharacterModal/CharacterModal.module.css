@@ -4,7 +4,7 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(252, 252, 252, 0.7);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,13 +12,13 @@
 }
 
 .modal {
-  background-color: #1e293b;
+  background-color: #ffffff;
   padding: 2rem;
   border-radius: 12px;
   width: 90%;
   max-width: 800px;
   position: relative;
-  color: white;
+  color: rgb(5, 5, 5);
 }
 
 .closeBtn {
@@ -27,13 +27,13 @@
   right: 1rem;
   background: none;
   border: none;
-  color: #94a3b8;
+  color: #bfc2c5;
   font-size: 1.5rem;
   cursor: pointer;
 }
 
 .closeBtn:hover {
-  color: white;
+  color: rgb(104, 104, 104);
 }
 
 .content {
