@@ -1,6 +1,6 @@
-// components/Header/Header.jsx
 import styles from './Header.module.css';
 import Link from 'next/link';
+import TrocaTema from '../TrocaTema/TrocaTema';
 
 export default function Header() {
   return (
@@ -26,6 +26,8 @@ export default function Header() {
         </ul>
       </nav>
       <h2 className={styles.title}>WizardDex</h2>
+      
+      <TrocaTema />
     </header>
   );
 }

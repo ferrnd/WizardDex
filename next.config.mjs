@@ -4,14 +4,15 @@ const nextConfig = {
         remotePatterns: [
             {
                 protocol: 'https',
-                hostname: 'ik.imagekit.io', // Imagens da HP API
+                hostname: 'ik.imagekit.io', 
             },
             {
                 protocol: 'https',
-                hostname: 'placehold.co', // Imagem de fallback
+                hostname: 'placehold.co', 
             },
         ],
     },
 };
 
 export default nextConfig;
+

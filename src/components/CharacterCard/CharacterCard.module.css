@@ -1,5 +1,5 @@
 .card {
-  background-color: #f8f9fc;
+  background-color: rgba(230, 230, 230, 0.342);
   border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 6px rgba(230, 228, 228, 0.3);
@@ -30,7 +30,7 @@
 
 .name {
   margin: 0 0 0.5rem 0;
-  color: #fbbf24;
+  color: #e7b433d0;
 }
 
 .favBtn {
