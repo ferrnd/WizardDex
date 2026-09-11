@@ -21,7 +21,9 @@ export default function Personagens() {
             try {
                 setLoading(true);
                 const response = await axios.get('https://hp-api.onrender.com/api/characters');
-                setCharacters(response.data.slice(0, 25));
+                const data = response.data.slice(0, 25);
+                setCharacters(data);
+                localStorage.setItem('characters', JSON.stringify(data));
             } catch (err) {
                 setError('Ocorreu um erro ao buscar os bruxos. Tente novamente mais tarde.');
             } finally {
@@ -30,18 +32,24 @@ export default function Personagens() {
         };
 
         fetchCharacters();
+        const storedFavorites = JSON.parse(sessionStorage.getItem('favorites')) || [];
+        setFavorites(storedFavorites);
     }, []);
 
     const toggleFavorite = (character) => {
         const isFav = favorites.some((fav) => fav.id === character.id);
+        let updatedFavorites;
 
         if (isFav) {
-            setFavorites(favorites.filter((fav) => fav.id !== character.id));
+            updatedFavorites = favorites.filter((fav) => fav.id !== character.id);
             toast.info(`${character.name} foi removido(a) dos favoritos! 💔`);
         } else {
-            setFavorites([...favorites, character]);
+            updatedFavorites = [...favorites, character];
             toast.success(`${character.name} foi adicionado(a) aos favoritos! ❤️`);
         }
+        
+        setFavorites(updatedFavorites);
+        sessionStorage.setItem('favorites', JSON.stringify(updatedFavorites));
     };
 
     if (loading) return <div className={styles.loader}>Conjurando personagens... ✨</div>;
