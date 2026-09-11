@@ -5,14 +5,14 @@ import TrocaTema from '../TrocaTema/TrocaTema';
 export default function Header() {
   return (
     <header className={styles.header}>
-      <div className={styles.profileBox}>
+      <div className={styles.EsquerdaSection}>
         <img 
           src="https://www.catho.com.br/carreira-sucesso/wp-content/uploads/sites/3/2017/06/Harry-Potter.jpg" 
           alt="Foto de Perfil" 
           className={styles.avatar}
         />
       </div>
-      <nav>
+      <nav className={styles.navContainer}>
         <ul className={styles.navList}>
           <li>
             <Link href="/" className={styles.navLink}>Home</Link>
@@ -23,11 +23,15 @@ export default function Header() {
           <li>
             <Link href="/sobre" className={styles.navLink}>Sobre</Link>
           </li>
+          <li>
+            <Link href="/favoritos" className={styles.navLink}>favoritos</Link>
+          </li>
         </ul>
       </nav>
-      <h2 className={styles.title}>WizardDex</h2>
-      
-      <TrocaTema />
+      <div className={styles.direitaSection}>
+        <h2 className={styles.title}>WizardDex</h2>
+        <TrocaTema />
+      </div>
     </header>
   );
 }
