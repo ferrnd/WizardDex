@@ -6,7 +6,7 @@ import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import CharacterCard from '@/components/CharacterCard/CharacterCard';
 import CharacterModal from '@/components/CharacterModal/CharacterModal';
-import styles from './personagens.module.css';
+import styles from './Personagens.module.css';
 
 export default function Personagens() {
     const [characters, setCharacters] = useState([]);
